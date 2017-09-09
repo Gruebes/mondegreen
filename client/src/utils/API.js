@@ -11,7 +11,7 @@ export default {
     return axios.post("/api/", { body });
   },
   getTest: function() {
-    return axios.get("http://localhost:3001/test");
+    return axios.get("/test");
   }
 };
 
