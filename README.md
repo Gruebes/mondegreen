@@ -1,5 +1,11 @@
 # mondegreen
 
+## Front End Framework
+### Semantic UI
+Information
+<https://react.semantic-ui.com/introduction>
+
+## github
 ### Forking the repo
 
 1. Make sure you’re logged into GitHub with your account.
@@ -20,6 +26,7 @@ git remote add upstream https://github.com/Gruebes/mondegreen.git
 git pull upstream master
 ```
 
+## Commandline
 ### Installing
 
 After forking the project and setting up Upstream, run the following commands

@@ -21,11 +21,9 @@ if (process.env.NODE_ENV === "production") {
 } else {
     app.use(express.static(__dirname + "/public"));
 }
-// Use Routes
 app.use("/", routes);
 
 // Connect mongoose to our database
-
 const db = process.env.MONGODB_URI || "mongodb://localhost/mondegreen";
 mongoose.connect(db, function(error) {
     // Log any errors connecting with mongoose
