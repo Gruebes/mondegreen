@@ -9,7 +9,7 @@ var router = new express.Router();
 router.use("/api", apiRoutes);
 
 router.get('/test', function(req, res) {
-  res.send('String')
+  res.send('This is a String')
 })
 
 

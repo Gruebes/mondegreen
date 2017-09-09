@@ -12,7 +12,7 @@ module.exports = {
       res.json(err);
     });
   },
-  getSaved: function (req, res) {
+  get: function (req, res) {
     Question.find()
     .then(function(doc) {
       res.json(doc);
