@@ -12,7 +12,7 @@
 After you have your local repo setup from your forked repo, you will need to setup upstream ability to update your branch with changes in the master repo
 
 ```
-git remote add upstream https://github.com/Gruebes/mondegreen.github.io.git
+git remote add upstream https://github.com/Gruebes/mondegreen.git
 ```
 ### Pulling from Upstream
 
