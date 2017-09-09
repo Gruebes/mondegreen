@@ -25,6 +25,7 @@ app.use("/", routes);
 
 // Connect mongoose to our database
 const db = process.env.MONGODB_URI || "mongodb://localhost/mondegreen";
+// MONGODB_URI: mongodb://heroku_qjwhf630:e0ole0oo6gj4tri117jjn8qstl@ds129004.mlab.com:29004/heroku_qjwhf630
 mongoose.connect(db, function(error) {
     // Log any errors connecting with mongoose
     if (error) {
