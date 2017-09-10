@@ -14,9 +14,10 @@ export default class Navbar extends Component {
         return (
           <Segment inverted>
             <Menu inverted pointing secondary>
-              <Menu.Item name='welcome' active={activeItem === 'welcome'} onClick={this.handleItemClick} ><Link to="/">welcome</Link></Menu.Item>
-              <Menu.Item name='Signin' active={activeItem === 'Signin'} onClick={this.handleItemClick} ><Link to="/signin">signin</Link></Menu.Item>
-              <Menu.Item name='Signup' active={activeItem === 'Signup'} onClick={this.handleItemClick} ><Link to="/signup">signup</Link></Menu.Item>
+              <Menu.Item name='home' active={activeItem === 'home'} onClick={this.handleItemClick} ><Link to="/">home</Link></Menu.Item>
+              <Menu.Item name='dashboard' active={activeItem === 'dashboard'} onClick={this.handleItemClick} ><Link to="/dashboard">dashboard</Link></Menu.Item>              
+              <Menu.Item name='register' active={activeItem === 'register'} onClick={this.handleItemClick} ><Link to="/register">register</Link></Menu.Item>
+              <Menu.Item name='login' active={activeItem === 'login'} onClick={this.handleItemClick} ><Link to="/login">login</Link></Menu.Item>
               </Menu>
           </Segment>
         )
