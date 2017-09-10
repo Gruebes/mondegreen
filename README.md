@@ -5,6 +5,11 @@
 Information
 <https://react.semantic-ui.com/introduction>
 
+```
+import { insertcomponent } from 'semantic-ui-react';
+
+```
+
 ## github
 ### Forking the repo
 

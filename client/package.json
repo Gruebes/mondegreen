@@ -1,5 +1,5 @@
 {
-  "name": "mern",
+  "name": "mondegreen",
   "version": "0.1.0",
   "private": true,
   "proxy": "http://localhost:3001/",
@@ -11,6 +11,7 @@
     "react-router": "^4.2.0",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.11",
+    "semantic-ui-css": "^2.2.12",
     "semantic-ui-react": "^0.72.0"
   },
   "scripts": {
@@ -18,5 +19,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "semantic-ui": "^2.2.13"
   }
 }
