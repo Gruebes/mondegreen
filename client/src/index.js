@@ -40,13 +40,16 @@ if (token) {
 ReactDOM.render(  
   <Provider store={store}>
         <Router >
+            <div>
+            <Navbar />
             <Switch>
-                <Route path="/" component={Navbar} />
+                <Route exact path="/" component={RequireAuth(HomePage)} />
                 <Route path="/register" component={Register} />
                 <Route path="/login" component={Login} />
                 <Route path="/dashboard" component={RequireAuth(Dashboard)} />  
                 <Route path="*" component={NotFoundPage} />
             </Switch>
+            </div>
         </Router>
     </Provider>,
   document.getElementById('root'));
