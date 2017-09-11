@@ -15,7 +15,9 @@ import NotFoundPage from './Components/pages/Not-found-page';
 import HomePage from './Components/pages/Home-page';  
 import Register from './Components/auth/Register';  
 import Login from './Components/auth/Login';  
-import Dashboard from './Components/Dashboard';  
+import Logout from './Components/auth/Logout';  
+
+import Dashboard from './Components/pages/Dashboard';  
 import RequireAuth from './Components/auth/Require-auth';
 import Navbar from './Components/Navbar';
 
@@ -26,16 +28,10 @@ const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);
 const token = cookie.load('token');
 
-// console.log(`reducers: ${reducers} && 
-// Store: ${JSON.stringify(store)} && 
-// Token ${token}` );
-
-
-
+// console.log(`Token ${token}`);
 if (token) {  
   store.dispatch({ type: AUTH_USER });
 }
-
 
 ReactDOM.render(  
   <Provider store={store}>
@@ -43,11 +39,13 @@ ReactDOM.render(
             <div>
             <Navbar />
             <Switch>
-                <Route exact path="/" component={RequireAuth(HomePage)} />
+                <Route exact path="/" component={HomePage} />
                 <Route path="/register" component={Register} />
                 <Route path="/login" component={Login} />
+                <Route path="/logout" component={Logout} />
                 <Route path="/dashboard" component={RequireAuth(Dashboard)} />  
                 <Route path="*" component={NotFoundPage} />
+
             </Switch>
             </div>
         </Router>

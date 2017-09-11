@@ -1,9 +1,9 @@
 import React, { Component } from 'react';  
 import { connect } from 'react-redux';  
-import logo from '../../logo.svg';
+import logo from '../../../logo.svg';
 import './Dashboard.css'
 
-import * as actions from '../../actions';
+import * as actions from '../../../actions';
 
 class Dashboard extends Component {
 

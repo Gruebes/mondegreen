@@ -38,6 +38,8 @@ export function loginUser({ email, password }) {
   return function(dispatch) {
     axios.post(`${API_URL}/auth/login`, { email, password })
     .then(response => {
+      console.log(response.data.user);
+      
       cookie.save('token', response.data.token, { path: '/' });
       dispatch({ type: AUTH_USER });
       window.location.href = CLIENT_ROOT_URL + '/dashboard';
@@ -52,6 +54,8 @@ export function registerUser({ email, firstName, lastName, password }) {
   return function(dispatch) {
     axios.post(`${API_URL}/auth/register`, { email, firstName, lastName, password })
     .then(response => {
+      console.log(response.data.user);
+      
       cookie.save('token', response.data.token, { path: '/' });
       dispatch({ type: AUTH_USER });
       window.location.href = CLIENT_ROOT_URL + '/dashboard';
