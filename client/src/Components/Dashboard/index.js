@@ -22,6 +22,7 @@ class Dashboard extends Component {
     return (
       <div>
         {this.renderContent()}
+        <h1>Dash Dash Dash Dash</h1>
       </div>
     );
   }

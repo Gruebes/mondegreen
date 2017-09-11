@@ -1,13 +1,13 @@
 import axios from 'axios';  
 // import { browserHistory } from 'react-router';  
-import cookie from 'react-cookie';  
+import cookie from 'react-cookies';  
 import { AUTH_USER,  
          AUTH_ERROR,
          UNAUTH_USER,
          PROTECTED_TEST } from './types';
 
 const API_URL = 'http://localhost:3001/api';
-const CLIENT_ROOT_URL = 'http://localhost:/3000'
+const CLIENT_ROOT_URL = 'http://localhost:3000'
 
 export function errorHandler(dispatch, error, type) {  
   let errorMessage = '';
