@@ -17,7 +17,7 @@ import Register from './Components/auth/Register';
 import Login from './Components/auth/Login';  
 import Dashboard from './Components/Dashboard';  
 import RequireAuth from './Components/auth/Require-auth';
-import Navbar from './Navbar';
+import Navbar from './Components/Navbar';
 
 
 // Import stylesheets like this, if you choose: import './public/stylesheets/base.scss';
@@ -26,9 +26,9 @@ const createStoreWithMiddleware = applyMiddleware(reduxThunk)(createStore);
 const store = createStoreWithMiddleware(reducers);
 const token = cookie.load('token');
 
-console.log(`reducers: ${reducers} && 
-Store: ${JSON.stringify(store)} && 
-Token ${token}` );
+// console.log(`reducers: ${reducers} && 
+// Store: ${JSON.stringify(store)} && 
+// Token ${token}` );
 
 
 

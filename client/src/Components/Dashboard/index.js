@@ -1,5 +1,8 @@
 import React, { Component } from 'react';  
 import { connect } from 'react-redux';  
+import logo from '../../logo.svg';
+import './Dashboard.css'
+
 import * as actions from '../../actions';
 
 class Dashboard extends Component {
@@ -22,7 +25,15 @@ class Dashboard extends Component {
     return (
       <div>
         {this.renderContent()}
-        <h1>Dash Dash Dash Dash</h1>
+        <div className="App">
+        <div className="App-header">
+          <img src={logo} className="App-logo" alt="logo" />
+          <h2>Welcome to React!</h2>
+        </div>
+        <p className="App-intro">
+          To get started, edit <code>src/App.js</code> and save to reload.
+        </p>
+      </div>
       </div>
     );
   }
